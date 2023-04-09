@@ -49,23 +49,23 @@ span{
 
 }
 
-.mobile-navbar-btn{
+/* .mobile-navbar-btn{
   display: none;
   /* width: 50px;
   bottom: 50px;
   position: absolute;
   
   top: 15%; */
-}
 
-.mobile-nav-icon[name="close-outline"]{
+
+/* .mobile-nav-icon[name="close-outline"]{
     display: none;
 }
 
 .mobile-navbar-btn ion-icon{
     width: 40px;
     height: 40px;
-}
+} */ 
 
   
 .home{  
@@ -177,7 +177,6 @@ box-shadow: 3px 3px 3px 3px;
 }
 
 
-
 #contact-us{
     font-size: 19px;
     text-align: center;
@@ -203,6 +202,10 @@ ion-icon{
 
 
 @media (max-width:980px){
+   
+    body{
+        margin: 0;
+    }
 
     .img{
         display:none;
@@ -211,28 +214,45 @@ ion-icon{
     .about{
        padding-top: 400px;
     }
-    
+    /* .skills{
+        padding-bottom:300px ;
+    } */
     
     .home{
         padding: 10px 40px 0px 50px;
     }
-
-    .mobile-navbar-btn{
-        display: block;
-        z-index: 999;
-     width: 50px;
-  position: absolute;
-  
-  top: 15%; 
-
+    .nav{
+       position: relative; 
+       left: 0;
+       width: 100%;
+       padding: 0;
+       margin: 0;
+       font-size: 2px;
+       top: 36px;
+       
+    }
+    nav{
+        height: 100px;
     }
 
-   .nav{
-    width: 100%;
-    height: 70vh;
-    position: absolute;
-    top:0;
-    left: 0;
+    .active{
+        position:relative ;
+        bottom: 80px;
+     display: inline-block;
+            text-decoration: none;
+    }
+    nav h1{
+        padding-top: 10px;
+    }
+
+    .navbar{
+        background-color: rgb(187, 162, 211);
+        
+    }
+
+    ion-icon{
+        width:60px;
+        height: 30px;
     }
 
 }    
